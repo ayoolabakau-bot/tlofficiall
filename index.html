@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Review Invitation App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="formPage">
+  <h1>TL Official</h1>
+  <p>Enter your customer's name and email address to send them a review invitation</p>
+  <input type="text" id="customerName" placeholder="Name" required>
+  <input type="email" id="customerEmail" placeholder="Email" required>
+  <button id="sendButton" onclick="sendInvitation()">Ask for Review</button>
+</div>
+
+<div class="container success" id="successPage">
+  <h1>Success!</h1>
+  <p>Your review invitation was sent.<br>Click the button below to invite another customer to leave a review.</p>
+  <button onclick="resetForm()">Send Another Invitation</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
